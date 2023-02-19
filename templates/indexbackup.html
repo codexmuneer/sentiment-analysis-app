@@ -1,0 +1,291 @@
+
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <title>
+   Free Sentiment Analyzer
+  </title>
+  <meta charset="utf-8"/>
+  <meta content="index, follow" name="robots"/>
+  <meta content="Daniel Soper" name="author"/>
+  <link href="https://www.danielsoper.com/sentimentanalysis/default.aspx" rel="canonical"/>
+  <meta content="This free online sentiment analyzer allows you to perform a sentiment analysis on whatever text you like. The output is a sentiment score that indicates the extent to which your text has a positive or negative tone or emotional feeling." name="description"/>
+  <meta content="free online sentiment analysis tool, free sentiment analyzer, free sentiment analysis, free sentiment analysis software, free sentiment tool, sentiment analysis, sentiment analyzer, sentiment analysis tool, online sentiment analysis, online sentiment analysis tool" name="keywords"/>
+  <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
+  <!-- CSS (from CDNs) -->
+  <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" rel="stylesheet"/>
+  <link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" referrerpolicy="no-referrer" rel="stylesheet"/>
+  <!-- local CSS -->
+  <link href="../assets/css/style.min.css" media="screen" rel="stylesheet"/>
+  <!-- favicon -->
+  <link href="../assets/img/favicon.ico" rel="shortcut icon"/>
+ </head>
+ <body >
+  <canvas id="bgCanvas">
+  </canvas>
+  <form action="./default.aspx" id="form1" method="post">
+   <input id="__VIEWSTATE" name="__VIEWSTATE" type="hidden" value="/wEPDwUKLTU3ODMyNTg0MA9kFgICAQ9kFgICAw8PFgIeBFRleHQFigI8c3BhbiBjbGFzcz0nZm9udC13ZWlnaHQtYm9sZCB0ZXh0LXVuZGVybGluZSc+SW50ZXJwcmV0YXRpb246PC9zcGFuPiBUaGlzIHRleHQgaGFzIGEgc2VudGltZW50IHNjb3JlIG9mIDxzcGFuIGNsYXNzPSdmb250LXdlaWdodC1ib2xkJyBzdHlsZT0nY29sb3I6ICNGRkZGOTknPjQ2LjQ8L3NwYW4+LiBUaGlzIG1lYW5zIHRoYXQgdGhlIG92ZXJhbGwgc2VudGltZW50IG9yIHRvbmUgb2YgdGhpcyB0ZXh0IGlzIHNvbWV3aGF0IHBvc2l0aXZlIC8gZW50aHVzaWFzdGljLmRkZJb//oCJO0PDQn7gKiBBvsuPpVDA"/>
+   <input id="__VIEWSTATEGENERATOR" name="__VIEWSTATEGENERATOR" type="hidden" value="1BD4F115"/>
+   <input id="__EVENTVALIDATION" name="__EVENTVALIDATION" type="hidden" value="/wEdAATE0BUFR2/RODXkDZFs5cnd2ZB4LJGZAp/MBUq2VBryxs6ab3ZFP7uI+0ycDjyokGM9hWsIGzWZRYztMBhzhyln3d8uUhCHuu+0Kvi8fvb6ntMBCxQ="/>
+   <!-- Page Content -->
+   <div class="container-fluid h-100 background-image-none">
+    <!-- Header Layer -->
+    <div class="row">
+     <div class="col-xs-12 w-100">
+      <header id="header">
+       <!-- Logo Area -->
+       <div class="logo text-center padding-top-sm padding-bottom-xs">
+        <div class="logo-icon">
+         <i class="fas fa-laugh">
+         </i>
+        </div>
+        Free Sentiment Analyzer
+        <!-- Breadcrumbs -->
+        <div class="breadcrumbs">
+         <i class="fas fa-home">
+         </i>
+         <span id="breadcrumbs">
+          <a href="#breadcrumbs_SkipLink">
+           <img alt="Skip Navigation Links" border="0" height="0" src="/WebResource.axd?d=GIM_4xsE8LqR5kt1Cmnc0mEteumrCWWKU090UYF6IWdeXH8vpGvRNQYkIdkAEr0LGaHV61lK7l-qtrfeKGwWWAqWX6g1&amp;t=637460729481343508" width="0"/>
+          </a>
+          <span>
+           <a href="/default.aspx">
+            DanielSoper.com
+           </a>
+          </span>
+          <span>
+           &gt;
+          </span>
+          <span>
+           Sentiment Analyzer
+          </span>
+          <a id="breadcrumbs_SkipLink">
+          </a>
+         </span>
+        </div>
+        <!-- End Breadcrumbs -->
+       </div>
+       <!-- End Logo Area -->
+      </header>
+     </div>
+    </div>
+    <!-- End Header Layer -->
+    <!-- Main Content Layers -->
+    <div class="row" id="main-content-1">
+     <div class="col-xs-12 w-100">
+      <div class="info-box-title">
+       <i class="fas fa-chalkboard-teacher">
+       </i>
+       <span>
+        Overview
+       </span>
+      </div>
+      <div class="info-box">
+       This free tool will allow you to conduct a sentiment analysis on virtually any text written in English. The tool computes a sentiment score that reflects the overall sentiment, tone, or emotional feeling of your input text. Sentiment scores range from -100 to +100, where -100 indicates a very negative or serious tone and +100 indicates a very positive or enthusiastic tone.
+       <div class="padding-top-sm padding-bottom-sm">
+        To perform your sentiment analysis, simply type or paste some text into the box below and click the "Analyze Text!" button.
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="row" id="main-content-2">
+     <div class="col-md-9 padding-right-none">
+      <div class="info-box">
+       <div class="row w-100 padding-bottom-sm">
+        <div class="col">
+         <div class="row w-100 g-0">
+          <div class="col">
+           <textarea class="textbox w-100 min-height-md margin-bottom-xs" cols="20" id="txtText" name="txtText" rows="2">During the perusal of this letter, which informed Valentine for the first time of the madness of her father and the death of her brother, she became pale, a heavy sigh escaped from her bosom, and tears, not the less painful because they were silent, ran down her cheeks; her happiness cost her very dear. Morrel looked around uneasily. "But," he said, "the count's generosity is too overwhelming; Valentine will be satisfied with my humble fortune. Where is the count, friend? Lead me to him." Jacopo pointed towards the horizon. "What do you mean?" asked Valentine. "Where is the count? -- where is Haidee?"
+
+"Look!" said Jacopo.
+
+The eyes of both were fixed upon the spot indicated by the sailor, and on the blue line separating the sky from the Mediterranean Sea, they perceived a large white sail. "Gone," said Morrel; "gone! -- adieu, my friend -- adieu, my father!"
+
+"Gone," murmured Valentine; "adieu, my sweet Haidee -- adieu, my sister!"
+
+"Who can say whether we shall ever see them again?" said Morrel with tearful eyes.
+
+"Darling," replied Valentine, "has not the count just told us that all human wisdom is summed up in two words? -- `Wait and hope.'"</textarea>
+          </div>
+         </div>
+         <div class="row w-100 g-0">
+          <div class="col d-flex align-items-center justify-content-end">
+           <a href="#" onclick="javascript:document.getElementById('txtText').value='';">
+            clear text
+           </a>
+           <input class="button hover-bg-color-4 margin-left-sm" id="btnAnalyzeText" name="btnAnalyzeText" type="submit" value="Analyze Text!"/>
+          </div>
+         </div>
+        </div>
+        <div class="col-auto g-0">
+         <div style="width: 100px; height: 197px">
+          <canvas id="canvasChart" style="position: relative; left: 0px; top: 0px; z-index: 999">
+          </canvas>
+         </div>
+        </div>
+       </div>
+       <div class="row w-100 padding-bottom-sm">
+        <div class="col">
+         <span id="lblInterpretation">
+          <span class="font-weight-bold text-underline">
+           Interpretation:
+          </span>
+          This text has a sentiment score of
+          <span class="font-weight-bold" style="color: #FFFF99">
+           46.4
+          </span>
+          . This means that the overall sentiment or tone of this text is somewhat positive / enthusiastic.
+         </span>
+         <input id="sentimentScore" name="sentimentScore" type="hidden" value="46.4"/>
+        </div>
+       </div>
+       <div class="row w-100">
+        <div class="col" id="google-ad-horizontal">
+         <script async="" crossorigin="anonymous" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2293136388059989">
+         </script>
+         <!-- sentiment_analyzer_middle -->
+         <ins class="adsbygoogle" data-ad-client="ca-pub-2293136388059989" data-ad-format="auto" data-ad-slot="2032038877" data-full-width-responsive="true" style="display:block">
+         </ins>
+         <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+         </script>
+        </div>
+       </div>
+      </div>
+      <div class="info-box-title">
+       <i class="fas fa-info-circle">
+       </i>
+       <span>
+        About
+       </span>
+      </div>
+      <div class="info-box">
+       Sentiment analysis uses computational linguistics and text mining to automatically
+                        determine the sentiment or affective nature of the text being analyzed. Here are
+                        a few details that you may find interesting:
+       <ul>
+        <li>
+         This tool is designed to provide general-purpose sentiment analysis for reasonably long passages
+                                of text written in the English language. The tool is not oriented toward any specific
+                                domain (e.g., business, religion, entertainment, politics, etc.). The general-purpose
+                                nature of this tool has both advantages and disadvantages.
+        </li>
+        <li>
+         The sentiment analyzer was trained using the collection of more than 8,000 writing
+                                samples and transcripts of spoken conversations that appear in the American National
+                                Corpus (ANC). The ANC contains writing samples from a wide variety of genres and
+                                domains.
+        </li>
+        <li>
+         Because of the design of the American National Corpus, the sentiment analyzer is
+                                most accurate with text written in American English after 1990.
+        </li>
+        <li>
+         This tool produces an
+         <em>
+          overall
+         </em>
+         sentiment score. Although various
+                                passages within a sample of text may be particularly positive or negative, the sentiment
+                                score produced by this tool considers
+         <em>
+          all
+         </em>
+         of the text in the sample.
+        </li>
+        <li>
+         Sentiment analysis is a difficult task because it involves human emotions. Research
+                                shows that humans will disagree about the sentiment of written text in about 20% of all cases.
+                                This means that even if the sentiment analyzer were a perfect tool,
+                                as a human being you would likely only agree with its conclusions about 80% of the
+                                time.
+        </li>
+       </ul>
+       <div class="padding-top-sm">
+        Anyhow, I hope that you find this tool interesting. Thanks for visiting!
+       </div>
+       <div class="padding-top-sm">
+        -Dr. Soper
+       </div>
+      </div>
+     </div>
+     <div class="col-md-3" id="google-ad-vertical">
+      <script async="" crossorigin="anonymous" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2293136388059989">
+      </script>
+      <!-- sentiment_analyzer_right -->
+      <ins class="adsbygoogle" data-ad-client="ca-pub-2293136388059989" data-ad-format="auto" data-ad-slot="5039090569" data-full-width-responsive="true" style="display:block">
+      </ins>
+      <script>
+       (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+     </div>
+    </div>
+    <!-- End Main Content Layers -->
+    <!-- Footer Layer -->
+    <div class="row">
+     <div class="col-xs-12 w-100">
+      <footer id="footer">
+       <div class="footer text-center">
+        Copyright © 2004 - 2023 by
+        <a href="https://www.danielsoper.com/about/default.aspx">
+         Dr. Daniel Soper
+        </a>
+        .
+        <br/>
+        All rights reserved.
+       </div>
+      </footer>
+     </div>
+    </div>
+    <!-- End Footer Layer -->
+   </div>
+   <!-- End Container -->
+   <!-- End Page Content -->
+  </form>
+  <!-- JS (from CDNs) -->
+  <script crossorigin="anonymous" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" src="https://code.jquery.com/jquery-3.6.0.slim.min.js">
+  </script>
+  <script crossorigin="anonymous" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js">
+  </script>
+  <!--local JS-->
+  <script src="../assets/js/default.min.js" type="text/javascript">
+  </script>
+  <script src="sentiment_chart.min.js" type="text/javascript">
+  </script>
+ </body>
+</html>
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+body {
+  background-image: url('img_girl.jpg');
+}
+</style>
+
+<body style="background-color:black;">
+<form action="http://localhost:5000/predict" method="POST">
+    <div class="vertical-center">
+        <h1 style="background-color:orange;">Check sentiment value for the review</h1>
+    </div>
+    <p>Review <input type="text" name="review"/></p>
+    <p><input type="submit" value="check Sentiment"/></p>
+    <p style="font-size:48px">
+        &#128512; &#128512; &#128512; &#128512;
+    </p>
+</form>
+
+</body>
+</html>
+
+
